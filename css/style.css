@@ -1,0 +1,15 @@
+table#tb01 {
+    width:100%;
+}
+table#tb01 th{
+    background-color: azure;
+    color: blueviolet;
+}
+
+table#tb01 tr:nth-child(even){
+    background-color: brown;
+
+}
+table#tb01 tr:nth-child(odd){
+    background-color: coral;
+}
