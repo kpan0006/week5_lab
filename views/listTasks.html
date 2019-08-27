@@ -23,12 +23,15 @@
                     <th>Name</th>
                     <th>Due Date</th>
                     <th>Description</th>
+                    <th>Information</th>
                 </tr>
                 <% for(let i =0; i<mytasks.length; ++i){%>
                     <tr>
                         <td> <%= mytasks[i].taskname %> </td>
                         <td> <%= mytasks[i].taskdue %> </td>
                         <td> <%= mytasks[i].taskdesc %> </td>
+                        <td> <%= mytasks[i].taskinfo %> </td>
+
                     </tr>
 
                 <%}%>

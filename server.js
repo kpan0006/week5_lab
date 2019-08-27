@@ -27,14 +27,14 @@ app.get("/newtask",function(req,res){
 });
 
 app.get("/listtasks",function(req,res){
-    res.render("listTasks",{mycustomers:db});
+    res.render("listTasks",{mytasks:db});
 });
 
 app.post("/listtasks",function(req,res){
     db.push(req.body);
     //first: HTML filename    second : my customers:propertyName, value is db, can be several properties
     //render before sending
-    res.render("listTasks",{mycustomers:db});
+    res.render("listTasks",{mytasks:db});
 
 });
 
